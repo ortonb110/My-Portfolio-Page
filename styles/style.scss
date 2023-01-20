@@ -1,0 +1,113 @@
+//Colors
+$bg-primary-color: #151515;
+$color-grey_dark: #242424;
+$color-green_light: #4EE1A0;
+$color-grey_light: #D9D9D9;
+$color-white: #FFFFFF;
+
+//Typography
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+$fontFamily:  'Space Grotesk', sans-serif;
+$headerFontXLarge: 88px;
+$headerFontLarge: 48px;
+$headerMedium: 24px;
+$bodyFont: 18px;
+$headerXLargeLine: 88px;
+$headerXLargeCharSpacing: -2.5px;
+$headerLargeLine: 56px;
+$headerLargeCharSpacing: -1.5px;
+$headerMediumLine: 32px;
+$bodyFontLine: 28px; 
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $bg-primary-color;
+    font-size: $bodyFont;
+    line-height: $bodyFontLine;
+    color: $color-white;
+    font-family: $fontFamily;
+    padding: 0;
+    margin: 0;
+    
+
+     main {
+
+
+        .header {
+            width: 174px;
+            margin: 0 auto;
+            height: 383px;
+            background: rgb(36,36,36);
+            background: linear-gradient(177deg, rgba(36, 36, 36, 0.356) 0%, rgba(36,36,36,0) 100%);
+            position: relative;
+            
+            .navbar {
+                text-align: center;
+                margin-top: 20px;
+
+                .nav-title {
+                    font-size: $headerMedium;
+                    letter-spacing: -0.33px;
+                    font-weight: 500;
+                    line-height: $headerMediumLine;
+                    margin-bottom: 2rem;
+                }
+                a {
+                    text-decoration: none;
+                    margin-right: 1.4rem;
+                   
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    img {
+                        width: 19px;
+                    }
+                }
+
+
+            }
+            
+           .hero {
+
+            .hero-image {
+                img {
+                    margin-top: 2.5rem;
+                    width: 174px;
+                    
+                    
+                }
+            }
+
+            .background-patterns {
+
+                img:first-child {
+                    width: 530px;
+                    position: absolute;
+                    right: 110px;
+                    top: 100px;
+                    z-index: -1;
+                }
+
+                img:last-child {
+                    position: absolute;
+                    left: 220px;
+                    bottom: 20px;
+                }
+            }
+           } 
+        }
+     }
+
+}
+
+//Tablet sized screen
+@media screen and (min-width: 800px) {
+    
+}
