@@ -22,6 +22,7 @@ $borderBottomLine: 3px solid $color-green_light;
 
 *, *::before, *::after {
     box-sizing: border-box;
+    scroll-behavior: smooth !important;
 }
 
 html {
